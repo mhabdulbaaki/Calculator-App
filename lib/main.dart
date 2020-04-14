@@ -69,7 +69,6 @@ class _MyCalculatorState extends State<MyCalculator> {
     return Container(
       height: MediaQuery.of(context).size.height * 0.08,
       child: FlatButton(
-        color: buttonColor,
         shape: CircleBorder(
           side: BorderSide(
               color: Colors.black, width: 1, style: BorderStyle.solid),
@@ -77,6 +76,7 @@ class _MyCalculatorState extends State<MyCalculator> {
         child: Text(
           text,
           style: TextStyle(
+            color: buttonColor,
             fontSize: 20.0,
           ),
         ),
